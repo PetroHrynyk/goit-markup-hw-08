@@ -3,12 +3,15 @@
    
     display: flex;
     align-items: center;
-    width: 100%;
+    // width: 100%;
     
     justify-content: space-between;
     min-height: 60px;
 }
-
+.header-mob{
+    display: flex;
+    justify-content: space-between;
+}
 .nav,
 .header-contact{
     @media screen and (max-width: 767px) {

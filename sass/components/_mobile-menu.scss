@@ -57,7 +57,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    // space-between не спрацював
+position: absolute;
+top: 27px;
+right: 15px;
     margin: 0;
     padding: 0;
     background-color: transparent;
@@ -143,15 +146,22 @@ height: 100%;
 .mobile-social-list{
     margin-top: 64px;
     display: flex;
+    // flex-wrap: wrap;
     position: relative;
 }
 .mobile-social-link{
+    @media screen and (max-width: 400px) {
+            font-size: 12px;
+        }
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    
+    
 }
+    
 .mobile-social-item:not(:last-child){
     margin-right: 20px;
 }
@@ -160,7 +170,7 @@ height: 100%;
         display: block;
         position: absolute;
         top: 0;
-       
+  
         width: 1px;
         height: 22px;
         background-color: rgba(33, 33, 33, 0.2);
