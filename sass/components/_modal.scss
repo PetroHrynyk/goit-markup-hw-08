@@ -422,7 +422,7 @@ textarea {
     }
 }
 
-.icon-chek {
+.icon-check {
     display: inline-block;
     width: 16px;
     height: 15px;
@@ -443,7 +443,7 @@ textarea {
     border: 0;
     clip: rect(0 0 0 0);
 
-    &:checked+.icon-chek {
+    &:checked+.icon-check {
         background-image: url(../images/icon-check.svg);
         background-position: center;
         background-repeat: no-repeat;
@@ -451,6 +451,9 @@ textarea {
         background-origin: border-box;
         border-color: var(--accent-color);
     }
+        &:focus+.icon-check{
+            border-color: var(--accent-color)
+        }
 }
 
 .policy-label {
@@ -488,7 +491,7 @@ textarea {
     align-items: center;
     justify-content: center;
 
-    margin: 0 auto;
+    margin: 30px auto 0;
     padding: 10px 56px;
 
     border: none;
@@ -507,7 +510,7 @@ textarea {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--white-text-color);
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--animation);
 
     &:focus,
     &:hover {
