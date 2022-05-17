@@ -292,7 +292,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--hero-background-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero-mobile.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1486,7 +1486,7 @@ textarea:focus {
   text-decoration: none;
   font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
@@ -1512,7 +1512,7 @@ textarea:focus {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }/*# sourceMappingURL=main.css.map */
