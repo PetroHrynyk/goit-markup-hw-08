@@ -1036,19 +1036,12 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .portfolio-list {
-    margin-bottom: -30px;
-    margin-right: -30px;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .portfolio-list {
-    margin-bottom: -30px;
-    margin-right: -30px;
-  }
-}
-
 .portfolio-item {
-  margin-bottom: 30px;
+  margin-top: 30px;
   border: 1px solid #eeeeee;
   display: flex;
   flex-direction: column;
@@ -1058,14 +1051,14 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .portfolio-item {
-    margin-right: 30px;
+    margin-left: 30px;
     flex-basis: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio-item {
     flex-basis: calc((100% - 90px) / 3);
-    margin-right: 30px;
+    margin-left: 30px;
   }
 }
 .portfolio-item:hover, .portfolio-item:focus {
@@ -1077,7 +1070,7 @@ textarea {
   border-top: transparent;
   height: 100%;
   flex-grow: 1;
-  padding: 20px 20px;
+  padding: 20px 24px;
   display: flex;
   flex-direction: column;
 }
@@ -1087,6 +1080,7 @@ textarea {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  height: 65px;
 }
 
 .portfolio-list-text {
@@ -1094,6 +1088,7 @@ textarea {
   font-size: 16px;
   line-height: 1.87;
   color: var(--secondary-text-color);
+  flex-grow: 1;
 }
 
 .backdrop {
