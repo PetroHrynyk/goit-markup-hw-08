@@ -5,25 +5,36 @@
 
     background-color: var(--hero-background-color);
 }
-
+.footer__contacts-flex{
+    margin-bottom: 60px;
+    @media (min-width: 1200px){
+        margin-bottom: 0;
+    }
+}
 .footer__flex {
-    display: block;
-    margin: 0;
-    padding: 0px;
-    list-style: none;
+ 
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   
 
     @media (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 30px 165px;
+       
+        flex-direction: row;
+        justify-content: space-around;
+            flex-wrap: wrap;
+            padding-left: 86px;
+            padding-right: 86px;
+      
     }
 
     @media (min-width: 1200px) {
-        display: flex;
-        justify-content: center;
-        text-align: left;
-        gap: 70px;
+        
+            display: flex;
+            justify-content: space-between;
+            flex-direction: unset;
+            text-align: unset;
+       padding: 0;
     }
 }
 
@@ -61,13 +72,14 @@
 }
 
 .social-section {
-    display: block;
-
-    margin-top: 60px;
-    text-align: center;
-
+   
+width: 206px;
+    margin: 0 auto;
+    margin-bottom: 60px;
     @media (min-width: 768px) {
-        margin-top: 0px;
+        // margin-top: 0px;
+        margin: 0;
+        margin-left: auto;
     }
 }
 
@@ -132,15 +144,14 @@
 }
 
 .footer-submit {
-    margin-top: 60px;
+    // margin-top: 60px;
 
     @media (min-width: 768px) {
-        margin-top: 0px;
-        padding: 0;
+        margin: 0 auto;
     }
 
     @media (min-width: 1200px) {
-        margin-left: 23px;
+        // margin-left: 23px;
     }
 }
 
